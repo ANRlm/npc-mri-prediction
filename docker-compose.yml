@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./MRI_backend
+      dockerfile: Dockerfile
+    container_name: mri-backend
+    restart: always
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./MRI_backend/models:/app/models
+      - ./MRI_backend/data:/app/data
+      - ./MRI_backend/output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MODEL_PATH=models/adasyn_cox_model.pkl
+      - SCALER_PATH=models/scaler.pkl
+      - INFO_PATH=models/adasyn_model_info.pkl
+      - FEATURES_PATH=data/flat_statistics.csv
+      - PORT=5001
+    networks:
+      - mri-network
+
+  mri-frontend:
+    build:
+      context: ./vue3-font-mri
+      dockerfile: Dockerfile
+    container_name: mri-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - mri-network
+
+networks:
+  mri-network:
+    driver: bridge 

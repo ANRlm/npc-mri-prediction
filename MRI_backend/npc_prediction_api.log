@@ -1,0 +1,413 @@
+2025-04-16 21:25:09,886 - npc_prediction_api - ERROR - 模型加载失败: 加载文件 models/adasyn_cox_model.pkl 失败: [Errno 2] No such file or directory: 'models/adasyn_cox_model.pkl'
+2025-04-16 21:25:09,902 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-04-16 21:25:09,902 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 21:26:50,844 - npc_prediction_api - ERROR - 模型加载失败: 加载文件 models/adasyn_cox_model.pkl 失败: [Errno 2] No such file or directory: 'models/adasyn_cox_model.pkl'
+2025-04-16 21:26:50,844 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 21:26:50] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-04-16 21:34:06,903 - npc_prediction_api - ERROR - 模型加载失败: 加载文件 models/adasyn_cox_model.pkl 失败: [Errno 2] No such file or directory: 'models/adasyn_cox_model.pkl'
+2025-04-16 21:34:06,917 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-04-16 21:34:06,917 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 21:34:10,717 - npc_prediction_api - ERROR - 模型加载失败: 加载文件 models/adasyn_cox_model.pkl 失败: [Errno 2] No such file or directory: 'models/adasyn_cox_model.pkl'
+2025-04-16 21:34:10,717 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 21:34:10] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-04-16 21:39:54,646 - npc_prediction_api - INFO - 模型加载成功
+2025-04-16 21:39:54,668 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-04-16 21:39:54,668 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 21:39:57,775 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-16 21:39:57,776 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 21:39:57] "POST /api/predict HTTP/1.1" 200 -
+2025-04-16 21:57:27,965 - npc_prediction_api - INFO - 模型加载成功
+2025-04-16 21:57:27,987 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-04-16 21:57:27,987 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 21:57:32,241 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-16 21:57:32,241 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 21:57:32] "POST /api/predict HTTP/1.1" 200 -
+2025-04-16 22:14:54,886 - npc_prediction_api - INFO - 模型加载成功
+2025-04-16 22:14:54,909 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.100:5001
+2025-04-16 22:14:54,909 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:15:32,684 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 22:15:32] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-16 22:56:36,753 - npc_prediction_api - INFO - 模型加载成功
+2025-04-16 22:56:36,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.100:5001
+2025-04-16 22:56:36,769 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:56:39,294 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-16 22:56:39,294 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 22:56:39] "POST /api/predict HTTP/1.1" 200 -
+2025-04-16 23:00:52,837 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 23:00:52] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 08:56:02,001 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 08:56:02,029 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.179.122:5001
+2025-04-18 08:56:02,029 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 09:12:29,395 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:12:29] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:21:33,140 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:21:33] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:27:34,224 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 09:27:34,259 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.179.122:5001
+2025-04-18 09:27:34,259 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 09:28:17,903 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:28:17] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:29:50,042 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 09:29:50,068 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.179.122:5001
+2025-04-18 09:29:50,068 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 09:30:31,735 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:30:31] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:30:31,793 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:30:31] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:30:31,821 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:30:31] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 09:30:32,867 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-18 09:30:32,868 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:30:32] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 09:43:34,238 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:43:34] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:43:34,281 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:43:34] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:43:34,298 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:43:34] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 09:43:35,436 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-18 09:43:35,438 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:43:35] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 09:44:48,372 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:44:48] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:44:48,394 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:44:48] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:44:48,407 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:44:48] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 09:44:49,306 - npc_prediction_api - INFO - 患者002预测成功，风险分组: 低风险组
+2025-04-18 09:44:49,308 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:44:49] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 09:45:39,677 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:45:39] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:45:39,699 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:45:39] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 09:45:39,710 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:45:39] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 09:45:40,893 - npc_prediction_api - INFO - 患者002预测成功，风险分组: 低风险组
+2025-04-18 09:45:40,895 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:45:40] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 09:54:02,246 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:54:02] "[31m[1mGET /api/predict HTTP/1.1[0m" 405 -
+2025-04-18 09:54:08,347 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-18 09:54:08,348 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:54:08] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:06:06,772 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:06:06,777 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:06:06,791 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:06:06,792 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:08:08,908 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:08:08,911 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:08:08,926 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:08:08,926 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:09:50,799 - npc_prediction_api - ERROR - 保存到MongoDB失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-18 20:09:50,799 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-18 20:09:50,800 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:09:50] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:12:47,259 - npc_prediction_api - ERROR - 保存到MongoDB失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-18 20:12:47,259 - npc_prediction_api - INFO - 患者P001预测成功，风险分组: 低风险组
+2025-04-18 20:12:47,260 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:12:47] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:18:05,437 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:18:05,440 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:18:05,459 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:18:05,459 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:18:27,677 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:18:27] "[35m[1mGET /api/test-mongodb HTTP/1.1[0m" 500 -
+2025-04-18 20:19:03,551 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:19:03,554 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:19:03,573 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:19:03,573 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:19:06,125 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:19:06] "GET /api/test-mongodb HTTP/1.1" 200 -
+2025-04-18 20:21:27,659 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:21:27,663 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:21:27,682 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:21:27,688 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:22:02,837 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:22:02] "[31m[1mGET /api/predict HTTP/1.1[0m" 405 -
+2025-04-18 20:22:07,069 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680243ef59291ffa0bf933cc
+2025-04-18 20:22:07,069 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:22:07,070 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:22:07] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:25:11,763 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680244a759291ffa0bf933cd
+2025-04-18 20:25:11,763 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:25:11,764 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:25:11] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:26:24,542 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:26:24,545 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:26:24,565 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:26:24,565 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:27:38,593 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:27:38] "GET /api/prediction-history HTTP/1.1" 200 -
+2025-04-18 20:29:54,355 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:29:54] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:29:54,374 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:29:54] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:29:54,383 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:29:54] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 20:29:54,922 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680245c278ed72a855b9859a
+2025-04-18 20:29:54,922 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-18 20:29:54,923 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:29:54] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:30:52,364 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:30:52] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:30:52,381 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:30:52] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:30:52,390 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:30:52] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 20:30:52,926 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680245fc78ed72a855b9859b
+2025-04-18 20:30:52,926 - npc_prediction_api - INFO - 患者356预测成功，风险分组: 低风险组
+2025-04-18 20:30:52,927 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:30:52] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:38:14,739 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:38:14,743 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:38:14,762 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:38:14,762 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:39:19,922 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:39:19] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:39:19,942 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:39:19] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:39:19,949 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:39:19] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 20:39:20,533 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680247f832812ccad4fbdbb1
+2025-04-18 20:39:20,533 - npc_prediction_api - INFO - 患者002预测成功，风险分组: 低风险组
+2025-04-18 20:39:20,534 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:39:20] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:40:21,510 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:40:21] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:40:21,525 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:40:21] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 20:40:21,539 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:40:21] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 20:40:22,060 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 6802483632812ccad4fbdbb2
+2025-04-18 20:40:22,060 - npc_prediction_api - INFO - 患者002预测成功，风险分组: 低风险组
+2025-04-18 20:40:22,061 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:40:22] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:41:03,530 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 6802485f32812ccad4fbdbb3
+2025-04-18 20:41:03,530 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:41:03,531 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:41:03] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:41:29,319 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 6802487932812ccad4fbdbb4
+2025-04-18 20:41:29,319 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:41:29,319 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:41:29] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:49:47,441 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 20:49:47,445 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 20:49:47,464 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 20:49:47,465 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 20:49:55,012 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 68024a72490b21d5f2fb73dd
+2025-04-18 20:49:55,012 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:49:55,013 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:49:55] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:50:09,723 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 68024a81490b21d5f2fb73de
+2025-04-18 20:50:09,724 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 20:50:09,725 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:50:09] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 20:51:33,730 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 20:51:33] "GET /api/prediction-history HTTP/1.1" 200 -
+2025-04-18 21:31:27,609 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 21:31:27,612 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 21:31:27,632 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 21:31:27,632 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 21:32:14,350 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 6802545eec9e186b63222095
+2025-04-18 21:32:14,350 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 21:32:14,351 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 21:32:14] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 21:32:32,775 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 68025470ec9e186b63222096
+2025-04-18 21:32:32,775 - npc_prediction_api - INFO - 患者NPC001预测成功，风险分组: 低风险组
+2025-04-18 21:32:32,776 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 21:32:32] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 22:10:26,097 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:10:26,101 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:10:26,113 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:10:26,113 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:12:05,919 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:12:05,922 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:12:05,941 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:12:05,941 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:12:27,544 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:12:27] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 22:12:27,574 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:12:27] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-18 22:12:27,584 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:12:27] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-18 22:12:28,156 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 68025dccb406199f8b00bd42
+2025-04-18 22:12:28,156 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-18 22:12:28,156 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:12:28] "POST /api/predict HTTP/1.1" 200 -
+2025-04-18 22:13:10,292 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:13:10,296 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:13:10,316 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:13:10,316 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:13:45,163 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:13:45,166 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:13:45,185 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:13:45,185 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:15:05,575 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:15:05,579 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:15:05,597 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:15:05,597 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:17:40,348 - npc_prediction_api - INFO - 模型加载成功
+2025-04-18 22:17:40,352 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-18 22:17:40,364 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2025-04-18 22:17:40,364 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 22:20:05,567 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:20:05] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:20:05,576 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:20:05] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:27:58,045 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:27:58] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:27:58,052 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:27:58] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:28:19,307 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:28:19] "[33mOPTIONS /api/prediction/NPC001_1744983152774/report HTTP/1.1[0m" 404 -
+2025-04-18 22:31:02,965 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:31:02] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:31:02,971 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:31:02] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:31:29,836 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:31:29] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:31:29,842 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:31:29] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:31:33,838 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:31:33] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:32:15,259 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:32:15] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:32:15,264 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:32:15] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:35:40,376 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:35:40] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-18 22:35:40,382 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 22:35:40] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 22:12:07,100 - npc_prediction_api - INFO - 模型加载成功
+2025-04-24 22:12:07,103 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-24 22:12:07,123 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.102:5001
+2025-04-24 22:12:07,123 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 22:14:53,825 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:14:53] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 22:14:53,857 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:14:53] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 22:14:53,864 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:14:53] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-24 22:14:54,485 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680a475ee54550f417f4528b
+2025-04-24 22:14:54,485 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-24 22:14:54,486 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:14:54] "POST /api/predict HTTP/1.1" 200 -
+2025-04-24 22:15:34,933 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:15:34] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 22:15:34,946 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 22:15:34] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 22:46:48,299 - npc_prediction_api - INFO - 模型加载成功
+2025-04-24 22:46:48,303 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-24 22:46:48,315 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.102:5001
+2025-04-24 22:46:48,315 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 22:47:04,071 - npc_prediction_api - INFO - 模型加载成功
+2025-04-24 22:47:04,074 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-24 22:47:04,093 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.102:5001
+2025-04-24 22:47:04,093 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 23:00:22,709 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:00:22] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:00:22,720 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:00:22] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:00:50,616 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:00:50] "[33mOPTIONS /api/prediction/NPC001_1745057913468/report HTTP/1.1[0m" 404 -
+2025-04-24 23:03:53,422 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:03:53] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:03:53,446 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:03:53] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:03:53,453 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:03:53] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-24 23:03:54,032 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680a52da65b96a577665da28
+2025-04-24 23:03:54,032 - npc_prediction_api - INFO - 患者001预测成功，风险分组: 低风险组
+2025-04-24 23:03:54,033 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:03:54] "POST /api/predict HTTP/1.1" 200 -
+2025-04-24 23:15:30,956 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:15:30] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:15:30,972 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:15:30] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:15:30,984 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:15:30] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-24 23:15:31,506 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680a559365b96a577665da29
+2025-04-24 23:15:31,506 - npc_prediction_api - INFO - 患者005预测成功，风险分组: 低风险组
+2025-04-24 23:15:31,507 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:15:31] "POST /api/predict HTTP/1.1" 200 -
+2025-04-24 23:16:07,488 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:16:07] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:16:07,498 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:16:07] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:16:16,951 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:16:16] "[33mOPTIONS /api/prediction/NPC001_1744979111762 HTTP/1.1[0m" 404 -
+2025-04-24 23:20:31,559 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:20:31] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:20:31,569 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:20:31] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:23:15,963 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:23:15] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:23:15,975 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:23:15] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:29:44,270 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:29:44] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:29:44,276 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:29:44] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:29:59,274 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:29:59] "OPTIONS /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-04-24 23:29:59,279 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:29:59] "GET /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-04-24 23:30:10,670 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:30:10] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:30:10,675 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:30:10] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:44:51,697 - npc_prediction_api - INFO - 模型加载成功
+2025-04-24 23:44:51,702 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-24 23:44:51,721 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.102:5001
+2025-04-24 23:44:51,721 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 23:47:55,834 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:47:55] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:47:55,852 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:47:55] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-24 23:47:55,859 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:47:55] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-24 23:47:56,420 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680a5d2c42a5d3caebf957fd
+2025-04-24 23:47:56,420 - npc_prediction_api - INFO - 患者005预测成功，风险分组: 低风险组
+2025-04-24 23:47:56,420 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:47:56] "POST /api/predict HTTP/1.1" 200 -
+2025-04-24 23:48:03,369 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:48:03] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-24 23:48:03,379 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 23:48:03] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 15:44:40,851 - npc_prediction_api - INFO - 模型加载成功
+2025-04-25 15:44:40,855 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-25 15:44:40,867 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.100:5001
+2025-04-25 15:44:40,867 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 15:47:21,951 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:21] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-25 15:47:21,990 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:21] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-25 15:47:21,998 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:21] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-25 15:47:22,634 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680b3e0ae15324ab0faed206
+2025-04-25 15:47:22,634 - npc_prediction_api - INFO - 患者005预测成功，风险分组: 低风险组
+2025-04-25 15:47:22,635 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:47:22] "POST /api/predict HTTP/1.1" 200 -
+2025-04-25 15:48:56,326 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:48:56] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 15:48:56,335 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:48:56] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 15:49:05,526 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:49:05] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 15:49:05,537 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 15:49:05] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 16:49:04,853 - npc_prediction_api - INFO - 模型加载成功
+2025-04-25 16:49:04,859 - npc_prediction_api - INFO - MongoDB连接成功
+2025-04-25 16:49:04,882 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.215.122:5001
+2025-04-25 16:49:04,882 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 17:20:34,456 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:34] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-25 17:20:34,491 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:34] "POST /api/survival-curve-data HTTP/1.1" 200 -
+2025-04-25 17:20:34,506 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:34] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-04-25 17:20:35,456 - npc_prediction_api - INFO - 预测结果已保存到MongoDB, _id: 680b53e3073697594323a3a6
+2025-04-25 17:20:35,457 - npc_prediction_api - INFO - 患者005预测成功，风险分组: 低风险组
+2025-04-25 17:20:35,458 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:35] "POST /api/predict HTTP/1.1" 200 -
+2025-04-25 17:20:51,872 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:51] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-04-25 17:20:51,892 - werkzeug - INFO - 127.0.0.1 - - [25/Apr/2025 17:20:51] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:21:25,871 - npc_prediction_api - INFO - 模型加载成功
+2025-05-07 21:21:25,875 - npc_prediction_api - INFO - MongoDB连接成功
+2025-05-07 21:21:25,888 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.147.60.138:5001
+2025-05-07 21:21:25,888 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-07 21:27:20,343 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:27:20] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-05-07 21:27:20,350 - npc_prediction_api - ERROR - 读取特征数据失败: [Errno 2] No such file or directory: 'data/flat_statistics.csv'
+2025-05-07 21:27:20,350 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:27:20] "[35m[1mPOST /api/survival-curve-data HTTP/1.1[0m" 500 -
+2025-05-07 21:27:42,531 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:27:42] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:27:42,546 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:27:42] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:28:16,104 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:28:16] "OPTIONS /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-05-07 21:28:16,108 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:28:16] "GET /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-05-07 21:28:17,875 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:28:17] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:28:17,881 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:28:17] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:28:19,199 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:28:19] "GET /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-05-07 21:58:12,845 - npc_prediction_api - INFO - 模型加载成功
+2025-05-07 21:58:12,848 - npc_prediction_api - INFO - MongoDB连接成功
+2025-05-07 21:58:12,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.147.60.138:5001
+2025-05-07 21:58:12,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-07 21:58:31,611 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:58:31] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:58:31,624 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:58:31] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 21:58:34,913 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:58:34] "OPTIONS /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-05-07 21:58:34,917 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 21:58:34] "GET /api/prediction-history?patient_id=NPC001&page=2&size=10 HTTP/1.1" 200 -
+2025-05-07 22:00:23,141 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 22:00:23] "OPTIONS /api/survival-curve-data HTTP/1.1" 200 -
+2025-05-07 22:00:23,145 - npc_prediction_api - ERROR - 读取特征数据失败: [Errno 2] No such file or directory: 'data/flat_statistics.csv'
+2025-05-07 22:00:23,145 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 22:00:23] "[35m[1mPOST /api/survival-curve-data HTTP/1.1[0m" 500 -
+2025-05-07 22:00:45,975 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 22:00:45] "OPTIONS /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -
+2025-05-07 22:00:45,984 - werkzeug - INFO - 127.0.0.1 - - [07/May/2025 22:00:45] "GET /api/prediction-history?patient_id=NPC001&page=1&size=10 HTTP/1.1" 200 -

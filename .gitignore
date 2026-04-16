@@ -1,0 +1,7 @@
+.idea/
+.omc/
+.sisyphus/
+__pycache__/
+*.pyc
+.env
+node_modules/

@@ -1,6 +1,17 @@
 version: '3.8'
 
 services:
+  mongodb:
+    image: mongo:latest
+    container_name: mri-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - mri-network
+
   backend:
     build:
       context: ./MRI_backend
@@ -10,6 +21,7 @@ services:
     ports:
       - "5001:5001"
     volumes:
+      - ./MRI_backend/predict_backend.py:/app/predict_backend.py
       - ./MRI_backend/models:/app/models
       - ./MRI_backend/data:/app/data
       - ./MRI_backend/output:/app/output
@@ -20,12 +32,18 @@ services:
       - INFO_PATH=models/adasyn_model_info.pkl
       - FEATURES_PATH=data/flat_statistics.csv
       - PORT=5001
+      - MONGO_URI=mongodb://mongodb:27017/
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-change-this-secret-in-production}
+      - JWT_EXPIRES_DAYS=${JWT_EXPIRES_DAYS:-7}
+      - REGISTER_CODE=${REGISTER_CODE:-123456}
+    depends_on:
+      - mongodb
     networks:
       - mri-network
 
-  mri-frontend:
+  frontend:
     build:
-      context: ./vue3-font-mri
+      context: ./frontend
       dockerfile: Dockerfile
     container_name: mri-frontend
     restart: always
@@ -38,4 +56,7 @@ services:
 
 networks:
   mri-network:
-    driver: bridge 
+    driver: bridge
+
+volumes:
+  mongodb_data:

@@ -20,7 +20,7 @@ export const MriComparison = () => {
 
   const fetchImages = async () => {
     try {
-      const response = await api.get('/api/images');
+      const response = await api.get('/images');
       if (response.data && response.data.images) {
         setImages(response.data.images);
       } else {

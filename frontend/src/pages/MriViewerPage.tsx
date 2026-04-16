@@ -5,7 +5,9 @@ import api from '@/api/client';
 
 interface MriImage {
   filename: string;
-  data: string;
+  slice_number?: number;
+  base64?: string;
+  error?: string;
 }
 
 export function MriViewerPage() {
@@ -73,7 +75,7 @@ export function MriViewerPage() {
               className="group relative aspect-square rounded-lg overflow-hidden border border-border hover:border-accent transition-colors bg-card"
             >
               <img
-                src={img.data}
+                src={img.base64}
                 alt={img.filename}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -107,7 +109,7 @@ export function MriViewerPage() {
               </button>
             </div>
             <img
-              src={selected.data}
+              src={selected.base64}
               alt={selected.filename}
               className="w-full object-contain max-h-[70vh]"
             />

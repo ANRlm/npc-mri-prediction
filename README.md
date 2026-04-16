@@ -1,198 +1,198 @@
-# NPC MRI Prognosis Prediction Platform
+# 鼻咽癌 MRI 预后预测平台
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.9-blue.svg)
 ![React](https://img.shields.io/badge/react-18.3-blue.svg)
 ![Docker](https://img.shields.io/badge/docker-ready-brightgreen.svg)
 
-A comprehensive web-based platform for Nasopharyngeal Carcinoma (NPC) prognosis prediction using MRI imaging analysis and machine learning. The system provides survival prediction, risk stratification, and clinical decision support through an intuitive interface.
+一个综合性的基于 Web 的鼻咽癌（Nasopharyngeal Carcinoma, NPC）预后预测平台，使用 MRI 影像分析和机器学习技术。该系统通过直观的界面提供生存预测、风险分层和临床决策支持。
 
-## Features
+## 功能特性
 
-- **User Authentication**: Secure registration and login system with JWT-based authentication
-- **MRI Image Analysis**: Upload and process NIfTI format MRI images (T1, T2, T1C) with automatic feature extraction
-- **Survival Prediction**: Cox proportional hazards model for personalized survival rate prediction (1-year, 3-year, 5-year)
-- **Risk Stratification**: Automatic classification into high-risk and low-risk groups based on optimal thresholds
-- **Interactive Visualizations**: Dynamic survival curves, risk score distributions, and comparative analysis charts
-- **Clinical Decision Support**: Automated generation of follow-up recommendations based on risk assessment
-- **Prediction History**: Complete audit trail of all predictions with filtering and search capabilities
-- **Model Performance Metrics**: Real-time display of C-index, AUC, sensitivity, and specificity
-- **File Management**: Upload, download, and manage clinical data files
-- **Responsive Design**: Modern, mobile-friendly interface built with React and Tailwind CSS
+- **用户认证**：基于 JWT 的安全注册和登录系统
+- **MRI 影像分析**：上传和处理 NIfTI 格式的 MRI 影像（T1、T2、T1C），自动提取特征
+- **生存预测**：使用 Cox 比例风险模型进行个性化生存率预测（1年、3年、5年）
+- **风险分层**：基于最优阈值自动分类为高风险和低风险组
+- **交互式可视化**：动态生存曲线、风险评分分布和对比分析图表
+- **临床决策支持**：基于风险评估自动生成随访建议
+- **预测历史**：完整的预测审计追踪，支持筛选和搜索功能
+- **模型性能指标**：实时显示 C-index、AUC、敏感性和特异性
+- **文件管理**：上传、下载和管理临床数据文件
+- **响应式设计**：使用 React 和 Tailwind CSS 构建的现代化移动友好界面
 
-## Technology Stack
+## 技术栈
 
-### Backend
-- **Framework**: Flask 2.3.3
-- **Database**: MongoDB 
-- **Authentication**: Flask-JWT-Extended with bcrypt password hashing
-- **Machine Learning**: scikit-survival (Cox model), scikit-learn, lifelines
-- **Image Processing**: nibabel, OpenCV, mahotas, scikit-image
-- **Data Processing**: pandas, numpy
-- **Visualization**: matplotlib
-- **API Security**: Flask-Limiter for rate limiting, Flask-CORS for cross-origin requests
+### 后端
+- **框架**：Flask 2.3.3
+- **数据库**：MongoDB 
+- **认证**：Flask-JWT-Extended 配合 bcrypt 密码哈希
+- **机器学习**：scikit-survival（Cox 模型）、scikit-learn、lifelines
+- **图像处理**：nibabel、OpenCV、mahotas、scikit-image
+- **数据处理**：pandas、numpy
+- **可视化**：matplotlib
+- **API 安全**：Flask-Limiter 用于速率限制、Flask-CORS 用于跨域请求
 
-### Frontend
-- **Framework**: React 18.3 with TypeScript
-- **Build Tool**: Vite 5.4
-- **Styling**: Tailwind CSS 3.4
-- **Routing**: React Router DOM 6.27
-- **State Management**: Zustand 5.0
-- **Charts**: Recharts 2.13
-- **Animations**: Framer Motion 11.11
-- **Icons**: Lucide React
-- **HTTP Client**: Axios 1.7
+### 前端
+- **框架**：React 18.3 配合 TypeScript
+- **构建工具**：Vite 5.4
+- **样式**：Tailwind CSS 3.4
+- **路由**：React Router DOM 6.27
+- **状态管理**：Zustand 5.0
+- **图表**：Recharts 2.13
+- **动画**：Framer Motion 11.11
+- **图标**：Lucide React
+- **HTTP 客户端**：Axios 1.7
 
-### Infrastructure
-- **Containerization**: Docker & Docker Compose
-- **Web Server**: Nginx (frontend reverse proxy)
-- **Python Version**: 3.9
-- **Node Version**: Compatible with Vite 5.x
+### 基础设施
+- **容器化**：Docker & Docker Compose
+- **Web 服务器**：Nginx（前端反向代理）
+- **Python 版本**：3.9
+- **Node 版本**：兼容 Vite 5.x
 
-## Architecture Overview
+## 架构概览
 
-The platform follows a modern 3-tier architecture:
+该平台采用现代化的三层架构：
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                         Client Layer                         │
-│  React SPA (Port 80) - User Interface & Visualization       │
+│                         客户端层                             │
+│  React SPA (端口 80) - 用户界面与可视化                      │
 └─────────────────────────┬───────────────────────────────────┘
                           │ HTTP/REST API
 ┌─────────────────────────▼───────────────────────────────────┐
-│                      Application Layer                       │
-│  Flask API (Port 5001) - Business Logic & ML Inference      │
-│  - Authentication & Authorization                            │
-│  - Feature Extraction from MRI Images                        │
-│  - Cox Model Prediction                                      │
-│  - Survival Curve Generation                                 │
+│                        应用层                                │
+│  Flask API (端口 5001) - 业务逻辑与机器学习推理              │
+│  - 认证与授权                                                │
+│  - MRI 影像特征提取                                          │
+│  - Cox 模型预测                                              │
+│  - 生存曲线生成                                              │
 └─────────────────────────┬───────────────────────────────────┘
-                          │ MongoDB Protocol
+                          │ MongoDB 协议
 ┌─────────────────────────▼───────────────────────────────────┐
-│                        Data Layer                            │
-│  MongoDB (Port 27017) - Persistent Storage                   │
-│  - User Accounts                                             │
-│  - Prediction History                                        │
-│  - Clinical Data                                             │
+│                        数据层                                │
+│  MongoDB (端口 27017) - 持久化存储                           │
+│  - 用户账户                                                  │
+│  - 预测历史                                                  │
+│  - 临床数据                                                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Prerequisites
+## 前置要求
 
-- **Docker**: Version 20.10 or higher
-- **Docker Compose**: Version 2.0 or higher
-- **System Requirements**:
-  - 4GB RAM minimum (8GB recommended)
-  - 10GB free disk space
-  - Linux, macOS, or Windows with WSL2
+- **Docker**：版本 20.10 或更高
+- **Docker Compose**：版本 2.0 或更高
+- **系统要求**：
+  - 最低 4GB 内存（推荐 8GB）
+  - 10GB 可用磁盘空间
+  - Linux、macOS 或带 WSL2 的 Windows
 
-## Installation and Setup
+## 安装与设置
 
-### 1. Clone the Repository
+### 1. 克隆仓库
 
 ```bash
 git clone <repository-url>
 cd MRI
 ```
 
-### 2. Prepare Model Files
+### 2. 准备模型文件
 
-Place your trained model files in the `MRI_backend/models/` directory:
+将训练好的模型文件放置在 `MRI_backend/models/` 目录中：
 
 ```
 MRI_backend/models/
-├── adasyn_cox_model.pkl      # Trained Cox model
-├── scaler.pkl                 # Feature scaler
-└── adasyn_model_info.pkl      # Model metadata
+├── adasyn_cox_model.pkl      # 训练好的 Cox 模型
+├── scaler.pkl                 # 特征缩放器
+└── adasyn_model_info.pkl      # 模型元数据
 ```
 
-### 3. Prepare Data Files
+### 3. 准备数据文件
 
-Place your feature data in the `MRI_backend/data/` directory:
+将特征数据放置在 `MRI_backend/data/` 目录中：
 
 ```
 MRI_backend/data/
-└── flat_statistics.csv        # Pre-extracted features (for /api/predict)
+└── flat_statistics.csv        # 预提取的特征（用于 /api/predict）
 ```
 
-### 4. Configure Environment Variables
+### 4. 配置环境变量
 
-Create a `.env` file in the project root (optional, defaults are provided):
+在项目根目录创建 `.env` 文件（可选，已提供默认值）：
 
 ```bash
-# JWT Configuration
+# JWT 配置
 JWT_SECRET_KEY=your-secure-secret-key-here
 JWT_EXPIRES_DAYS=7
 
-# Registration Code (for demo mode)
+# 注册码（用于演示模式）
 REGISTER_CODE=123456
 
-# Model Paths (relative to /app in container)
+# 模型路径（相对于容器中的 /app）
 MODEL_PATH=models/adasyn_cox_model.pkl
 SCALER_PATH=models/scaler.pkl
 INFO_PATH=models/adasyn_model_info.pkl
 FEATURES_PATH=data/flat_statistics.csv
 
-# MongoDB Configuration
+# MongoDB 配置
 MONGO_URI=mongodb://mongodb:27017/
 MONGO_DB=MRI
 MONGO_COLLECTION=predictions
 
-# File Storage
+# 文件存储
 FILES_DIRECTORY=/app/data/16after/00C1068568
 ```
 
-### 5. Build and Start Services
+### 5. 构建并启动服务
 
 ```bash
-# Build and start all services
+# 构建并启动所有服务
 docker-compose up -d
 
-# View logs
+# 查看日志
 docker-compose logs -f
 
-# Check service status
+# 检查服务状态
 docker-compose ps
 ```
 
-### 6. Verify Installation
+### 6. 验证安装
 
-- **Frontend**: http://localhost
-- **Backend API**: http://localhost:5001
-- **MongoDB**: localhost:27017
+- **前端**：http://localhost
+- **后端 API**：http://localhost:5001
+- **MongoDB**：localhost:27017
 
-## Usage Guide
+## 使用指南
 
-### Starting the Application
+### 启动应用
 
 ```bash
-# Start all services
+# 启动所有服务
 docker-compose up -d
 
-# Stop all services
+# 停止所有服务
 docker-compose down
 
-# Restart a specific service
+# 重启特定服务
 docker-compose restart backend
 
-# View real-time logs
+# 查看实时日志
 docker-compose logs -f backend
 ```
 
-### Accessing the Application
+### 访问应用
 
-1. Open your browser and navigate to `http://localhost`
-2. Register a new account or login with existing credentials
-3. Upload MRI images or use pre-extracted features for prediction
-4. View survival curves, risk scores, and clinical recommendations
-5. Access prediction history from the dashboard
+1. 打开浏览器并访问 `http://localhost`
+2. 注册新账户或使用现有凭据登录
+3. 上传 MRI 影像或使用预提取的特征进行预测
+4. 查看生存曲线、风险评分和临床建议
+5. 从仪表板访问预测历史
 
-### Making Predictions
+### 进行预测
 
-#### Method 1: Upload MRI Images (Recommended)
+#### 方法 1：上传 MRI 影像（推荐）
 
 ```bash
-# Using curl
+# 使用 curl
 curl -X POST http://localhost:5001/api/upload-predict \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -F "image_file=@/path/to/image.nii.gz" \
@@ -201,7 +201,7 @@ curl -X POST http://localhost:5001/api/upload-predict \
   -F "image_type=T1"
 ```
 
-#### Method 2: Use Pre-extracted Features
+#### 方法 2：使用预提取的特征
 
 ```bash
 curl -X POST http://localhost:5001/api/predict \
@@ -219,11 +219,11 @@ curl -X POST http://localhost:5001/api/predict \
   }'
 ```
 
-## API Endpoints Documentation
+## API 端点文档
 
-### Authentication Endpoints
+### 认证端点
 
-#### Register User
+#### 注册用户
 ```http
 POST /api/register
 Content-Type: application/json
@@ -236,7 +236,7 @@ Content-Type: application/json
 }
 ```
 
-#### Login
+#### 登录
 ```http
 POST /api/login
 Content-Type: application/json
@@ -246,7 +246,7 @@ Content-Type: application/json
   "password": "securepass"
 }
 
-Response:
+响应：
 {
   "success": true,
   "token": "eyJ0eXAiOiJKV1QiLCJhbGc...",
@@ -255,21 +255,21 @@ Response:
 }
 ```
 
-#### Get Current User
+#### 获取当前用户
 ```http
 GET /api/user
 Authorization: Bearer <token>
 ```
 
-#### Logout
+#### 登出
 ```http
 POST /api/logout
 Authorization: Bearer <token>
 ```
 
-### Prediction Endpoints
+### 预测端点
 
-#### Predict with Pre-extracted Features
+#### 使用预提取特征进行预测
 ```http
 POST /api/predict
 Content-Type: application/json
@@ -287,20 +287,20 @@ Authorization: Bearer <token>
 }
 ```
 
-#### Upload and Predict
+#### 上传并预测
 ```http
 POST /api/upload-predict
 Content-Type: multipart/form-data
 Authorization: Bearer <token>
 
-Form Data:
-- image_file: NIfTI image file (.nii or .nii.gz)
-- mask_file: NIfTI mask file
-- clinical_file: Clinical data (.xlsx, .xls, or .csv)
+表单数据：
+- image_file: NIfTI 影像文件（.nii 或 .nii.gz）
+- mask_file: NIfTI 掩码文件
+- clinical_file: 临床数据（.xlsx、.xls 或 .csv）
 - image_type: "T1" | "T2" | "T1C"
 ```
 
-#### Get Survival Curve Data
+#### 获取生存曲线数据
 ```http
 POST /api/survival-curve-data
 Content-Type: application/json
@@ -318,372 +318,348 @@ Authorization: Bearer <token>
 }
 ```
 
-### History and Management Endpoints
+### 历史记录和管理端点
 
-#### Get Prediction History
+#### 获取预测历史
 ```http
 GET /api/prediction-history?patient_id=P001&limit=20&skip=0&time_range=month
 Authorization: Bearer <token>
 ```
 
-#### Delete Prediction
+#### 删除预测
 ```http
 DELETE /api/prediction/<prediction_id>
 Authorization: Bearer <token>
 ```
 
-#### Get MRI Images
+#### 获取 MRI 影像
 ```http
 GET /api/images
 Authorization: Bearer <token>
 ```
 
-#### Get File List
+#### 获取文件列表
 ```http
 GET /api/get-file-list
 ```
 
-#### Download File
+#### 下载文件
 ```http
 GET /files/<filename>
 ```
 
-## Project Structure
+## 项目结构
 
 ```
 MRI/
-├── MRI_backend/                    # Backend application
-│   ├── Dockerfile                  # Backend container configuration
-│   ├── requirements.txt            # Python dependencies
-│   ├── predict_backend.py          # Main Flask application
-│   ├── OS_T1_predictor.py          # Cox model predictor class
-│   ├── feature_extractor.py        # MRI feature extraction
-│   ├── auth_models.py              # User authentication models
-│   ├── models/                     # Trained ML models
+├── MRI_backend/                    # 后端应用
+│   ├── Dockerfile                  # 后端容器配置
+│   ├── requirements.txt            # Python 依赖
+│   ├── predict_backend.py          # 主 Flask 应用
+│   ├── OS_T1_predictor.py          # Cox 模型预测器类
+│   ├── feature_extractor.py        # MRI 特征提取
+│   ├── auth_models.py              # 用户认证模型
+│   ├── models/                     # 训练好的机器学习模型
 │   │   ├── adasyn_cox_model.pkl
 │   │   ├── scaler.pkl
 │   │   └── adasyn_model_info.pkl
-│   └── data/                       # Data files
+│   └── data/                       # 数据文件
 │       ├── flat_statistics.csv
-│       └── 16after/                # Sample MRI data
+│       └── 16after/                # 示例 MRI 数据
 │
-├── frontend/                       # Frontend application
-│   ├── Dockerfile                  # Frontend container configuration
-│   ├── package.json                # Node.js dependencies
-│   ├── tsconfig.json               # TypeScript configuration
-│   ├── vite.config.ts              # Vite build configuration
-│   ├── tailwind.config.js          # Tailwind CSS configuration
-│   ├── src/                        # Source code
-│   │   ├── App.tsx                 # Main application component
-│   │   ├── main.tsx                # Application entry point
-│   │   ├── components/             # React components
-│   │   ├── pages/                  # Page components
-│   │   ├── store/                  # Zustand state management
-│   │   └── utils/                  # Utility functions
-│   └── public/                     # Static assets
+├── frontend/                       # 前端应用
+│   ├── Dockerfile                  # 前端容器配置
+│   ├── package.json                # Node.js 依赖
+│   ├── tsconfig.json               # TypeScript 配置
+│   ├── vite.config.ts              # Vite 构建配置
+│   ├── tailwind.config.js          # Tailwind CSS 配置
+│   ├── src/                        # 源代码
+│   │   ├── App.tsx                 # 主应用组件
+│   │   ├── main.tsx                # 应用入口点
+│   │   ├── components/             # React 组件
+│   │   ├── pages/                  # 页面组件
+│   │   ├── store/                  # Zustand 状态管理
+│   │   └── utils/                  # 工具函数
+│   └── public/                     # 静态资源
 │
-├── docker-compose.yml              # Multi-container orchestration
-├── nginx.conf                      # Nginx configuration
-└── README.md                       # This file
+├── docker-compose.yml              # 多容器编排
+├── nginx.conf                      # Nginx 配置
+└── README.md                       # 本文件
 ```
 
-## Development Guide
+## 开发指南
 
-### Backend Development
+### 后端开发
 
-#### Running Backend Locally
+#### 本地运行后端
 
 ```bash
 cd MRI_backend
 
-# Create virtual environment
+# 创建虚拟环境
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows 上：venv\Scripts\activate
 
-# Install dependencies
+# 安装依赖
 pip install -r requirements.txt
 
-# Set environment variables
+# 设置环境变量
 export MONGO_URI=mongodb://localhost:27017/
 export JWT_SECRET_KEY=dev-secret-key
 
-# Run development server
+# 运行开发服务器
 python predict_backend.py
 ```
 
-#### Adding New API Endpoints
+#### 添加新的 API 端点
 
-1. Define route in `predict_backend.py`
-2. Implement validation logic
-3. Add MongoDB operations if needed
-4. Update API documentation
-5. Test with curl or Postman
+1. 在 `predict_backend.py` 中定义路由
+2. 实现验证逻辑
+3. 如需要，添加 MongoDB 操作
+4. 更新 API 文档
+5. 使用 curl 或 Postman 测试
 
-### Frontend Development
+### 前端开发
 
-#### Running Frontend Locally
+#### 本地运行前端
 
 ```bash
 cd frontend
 
-# Install dependencies
+# 安装依赖
 npm install
 
-# Start development server
+# 启动开发服务器
 npm run dev
 
-# Build for production
+# 构建生产版本
 npm run build
 
-# Preview production build
+# 预览生产构建
 npm run preview
 ```
 
-#### Project Structure
+#### 项目结构
 
-- `src/components/`: Reusable UI components
-- `src/pages/`: Page-level components
-- `src/store/`: Zustand state management
-- `src/utils/`: Helper functions and API clients
+- `src/components/`：可复用的 UI 组件
+- `src/pages/`：页面级组件
+- `src/store/`：Zustand 状态管理
+- `src/utils/`：辅助函数和 API 客户端
 
-### Code Style
+### 代码风格
 
-- **Backend**: Follow PEP 8 guidelines
-- **Frontend**: Use ESLint and Prettier configurations
-- **TypeScript**: Enable strict mode
-- **Commits**: Use conventional commit messages
+- **后端**：遵循 PEP 8 规范
+- **前端**：使用 ESLint 和 Prettier 配置
+- **TypeScript**：启用严格模式
+- **提交**：使用约定式提交消息
 
-## Testing Instructions
+## 测试说明
 
-### Backend Testing
+### 后端测试
 
 ```bash
 cd MRI_backend
 
-# Run unit tests
+# 运行单元测试
 python -m pytest tests/
 
-# Test API endpoints
+# 测试 API 端点
 curl -X POST http://localhost:5001/api/login \
   -H "Content-Type: application/json" \
   -d '{"username":"test","password":"test123"}'
 
-# Check model loading
+# 检查模型加载
 python -c "from OS_T1_predictor import OST1Predictor; print('Model OK')"
 ```
 
-### Frontend Testing
+### 前端测试
 
 ```bash
 cd frontend
 
-# Run type checking
+# 运行类型检查
 npm run build
 
-# Test production build
+# 测试生产构建
 npm run preview
 ```
 
-### Integration Testing
+### 集成测试
 
 ```bash
-# Start all services
+# 启动所有服务
 docker-compose up -d
 
-# Wait for services to be ready
+# 等待服务就绪
 sleep 10
 
-# Test health endpoints
+# 测试健康检查端点
 curl http://localhost:5001/api/prediction-history
 curl http://localhost/
 
-# Check logs for errors
+# 检查日志中的错误
 docker-compose logs backend | grep ERROR
 ```
 
-### Load Testing
+### 负载测试
 
 ```bash
-# Install Apache Bench
+# 安装 Apache Bench
 sudo apt-get install apache2-utils
 
-# Test prediction endpoint
+# 测试预测端点
 ab -n 100 -c 10 -T application/json \
   -H "Authorization: Bearer YOUR_TOKEN" \
   http://localhost:5001/api/prediction-history
 ```
 
-## Deployment Notes
+## 部署说明
 
-### Production Checklist
+### 生产环境检查清单
 
-- [ ] Change `JWT_SECRET_KEY` to a strong random value
-- [ ] Update `REGISTER_CODE` or implement proper invitation system
-- [ ] Configure MongoDB authentication
-- [ ] Enable HTTPS with SSL certificates
-- [ ] Set up backup strategy for MongoDB
-- [ ] Configure log rotation
-- [ ] Set up monitoring and alerting
-- [ ] Review and adjust rate limiting rules
-- [ ] Implement proper error tracking (e.g., Sentry)
-- [ ] Configure CORS for production domains only
+- [ ] 将 `JWT_SECRET_KEY` 更改为强随机值
+- [ ] 更新 `REGISTER_CODE` 或实现适当的邀请系统
+- [ ] 配置 MongoDB 认证
+- [ ] 使用 SSL 证书启用 HTTPS
+- [ ] 设置 MongoDB 备份策略
+- [ ] 配置日志轮转
+- [ ] 设置监控和告警
+- [ ] 审查并调整速率限制规则
+- [ ] 实现适当的错误跟踪（如 Sentry）
+- [ ] 仅为生产域名配置 CORS
 
-### Environment-Specific Configuration
+### 环境特定配置
 
-#### Development
+#### 开发环境
 ```bash
 docker-compose up
 ```
 
-#### Production
+#### 生产环境
 ```bash
-# Use production compose file
+# 使用生产 compose 文件
 docker-compose -f docker-compose.prod.yml up -d
 
-# Enable auto-restart
+# 启用自动重启
 docker-compose -f docker-compose.prod.yml up -d --restart=always
 ```
 
-### Scaling Considerations
+### 扩展考虑
 
-- **Backend**: Use Gunicorn with multiple workers
-- **Database**: Enable MongoDB replica set for high availability
-- **Frontend**: Serve through CDN for static assets
-- **Load Balancing**: Use Nginx or cloud load balancer for multiple backend instances
+- **后端**：使用 Gunicorn 配合多个 worker
+- **数据库**：启用 MongoDB 副本集以实现高可用性
+- **前端**：通过 CDN 提供静态资源
+- **负载均衡**：使用 Nginx 或云负载均衡器处理多个后端实例
 
-### Security Best Practices
+### 安全最佳实践
 
-1. **Never commit secrets**: Use environment variables or secret management
-2. **Regular updates**: Keep dependencies up to date
-3. **Input validation**: Validate all user inputs on backend
-4. **Rate limiting**: Protect against brute force attacks
-5. **HTTPS only**: Enforce SSL/TLS in production
-6. **Database security**: Enable authentication and encryption
-7. **Audit logging**: Log all authentication and prediction events
+1. **永远不要提交密钥**：使用环境变量或密钥管理
+2. **定期更新**：保持依赖项最新
+3. **输入验证**：在后端验证所有用户输入
+4. **速率限制**：防止暴力攻击
+5. **仅使用 HTTPS**：在生产环境中强制使用 SSL/TLS
+6. **数据库安全**：启用认证和加密
+7. **审计日志**：记录所有认证和预测事件
 
-### Backup Strategy
+### 备份策略
 
 ```bash
-# Backup MongoDB
+# 备份 MongoDB
 docker exec mri-mongodb mongodump --out /backup
 
-# Backup models
+# 备份模型
 tar -czf models-backup.tar.gz MRI_backend/models/
 
-# Automated daily backup
+# 自动化每日备份
 0 2 * * * /path/to/backup-script.sh
 ```
 
-## Troubleshooting
+## 故障排除
 
-### Common Issues
+### 常见问题
 
-#### Backend won't start
+#### 后端无法启动
 ```bash
-# Check logs
+# 检查日志
 docker-compose logs backend
 
-# Verify model files exist
+# 验证模型文件存在
 ls -la MRI_backend/models/
 
-# Check MongoDB connection
+# 检查 MongoDB 连接
 docker-compose exec backend python -c "from pymongo import MongoClient; print(MongoClient('mongodb://mongodb:27017/').server_info())"
 ```
 
-#### Frontend build fails
+#### 前端构建失败
 ```bash
-# Clear node_modules and reinstall
+# 清除 node_modules 并重新安装
 cd frontend
 rm -rf node_modules package-lock.json
 npm install
 ```
 
-#### MongoDB connection refused
+#### MongoDB 连接被拒绝
 ```bash
-# Ensure MongoDB is running
+# 确保 MongoDB 正在运行
 docker-compose ps mongodb
 
-# Check network connectivity
+# 检查网络连接
 docker-compose exec backend ping mongodb
 ```
 
-#### Model prediction errors
+#### 模型预测错误
 ```bash
-# Verify model compatibility
+# 验证模型兼容性
 docker-compose exec backend python -c "import pickle; pickle.load(open('models/adasyn_cox_model.pkl', 'rb'))"
 
-# Check feature alignment
+# 检查特征对齐
 docker-compose logs backend | grep "特征对齐"
 ```
 
-## Performance Optimization
+## 性能优化
 
-- **Backend**: Enable response caching for static predictions
-- **Frontend**: Implement code splitting and lazy loading
-- **Database**: Create indexes on frequently queried fields
-- **Images**: Compress and optimize MRI visualizations
-- **API**: Use pagination for large result sets
+- **后端**：为静态预测启用响应缓存
+- **前端**：实现代码拆分和懒加载
+- **数据库**：为频繁查询的字段创建索引
+- **图像**：压缩和优化 MRI 可视化
+- **API**：对大型结果集使用分页
 
-## Contributing
+## 贡献
 
-Contributions are welcome! Please follow these guidelines:
+欢迎贡献！请遵循以下指南：
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Fork 仓库
+2. 创建功能分支（`git checkout -b feature/amazing-feature`）
+3. 提交更改（`git commit -m 'Add amazing feature'`）
+4. 推送到分支（`git push origin feature/amazing-feature`）
+5. 开启 Pull Request
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see below for details:
+本项目采用 Apache-2.0 License 开源协议 - 详见 [LICENSE](LICENSE) 文件
 
-```
-MIT License
+## 致谢
 
-Copyright (c) 2024 NPC MRI Prognosis Prediction Platform
+- Cox 比例风险模型实现基于 scikit-survival
+- MRI 特征提取使用影像组学原理
+- UI 设计灵感来自现代医疗软件界面
+- 中文字体支持由文泉驿正黑提供
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 支持
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+如有问题、疑问或贡献：
+- 在 GitHub 上开启 issue
+- 联系开发团队
+- 查看文档 wiki
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+## 更新日志
 
-## Acknowledgments
-
-- Cox proportional hazards model implementation based on scikit-survival
-- MRI feature extraction using radiomics principles
-- UI design inspired by modern medical software interfaces
-- Chinese font support provided by WenQuanYi Zen Hei
-
-## Support
-
-For issues, questions, or contributions:
-- Open an issue on GitHub
-- Contact the development team
-- Check the documentation wiki
-
-## Changelog
-
-### Version 1.0.0 (Current)
-- Initial release
-- User authentication system
-- MRI image upload and feature extraction
-- Cox model survival prediction
-- Interactive survival curve visualization
-- Prediction history management
-- Docker containerization
-- RESTful API with comprehensive documentation
+### 版本 1.0.0（当前版本）
+- 初始发布
+- 用户认证系统
+- MRI 影像上传和特征提取
+- Cox 模型生存预测
+- 交互式生存曲线可视化
+- 预测历史管理
+- Docker 容器化
+- 带完整文档的 RESTful API
